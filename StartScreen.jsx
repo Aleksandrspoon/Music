@@ -21,27 +21,3 @@ function NavMenu() {
     </nav>
   );
 }
-
-function Main() {
-  return (
-    <main className="main">
-      <NavMenu />
-    </main>
-  );
-}
-
-function Container() {
-  return (
-    <div className="container">
-      <Main />
-    </div>
-  );
-}
-
-function Wrapper() {
-  return (
-    <div className="wrapper">
-      <Container />
-    </div>
-  );
-}
