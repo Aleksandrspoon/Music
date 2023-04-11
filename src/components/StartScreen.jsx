@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from './assets/logo.png';
+import logo from './assets/logo.png';
 import './App.css';
 
 function NavMenu() {
@@ -52,6 +52,9 @@ function Main() {
 }
 
 function StartScreen() {
+  // eslint-disable-next-line no-unused-vars
+  const logo = 'some logo value';
+
   return (
     <div className="start-screen">
       <img src={Logo} className="logo" alt="logo" />
