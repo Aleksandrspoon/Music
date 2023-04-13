@@ -5,7 +5,6 @@ function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleBurgerClick = () => {
-    console.log("Burger clicked");
     setIsMenuOpen(!isMenuOpen);
   };
 

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import logo from './assets/logo.png';
-import './App.css';
+import { useState } from 'react';
+import Logo from '../assets/logo.png';
 
 function NavMenu() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
+  const handleBurgerClick = () => {
+    console.log("Burger clicked");
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -14,27 +14,21 @@ function NavMenu() {
       <div className="nav__logo logo">
         <img className="logo__image" src={Logo} alt="logo" />
       </div>
-      <div className="nav__burger burger" onClick={toggleMenu}>
+      <div className="nav__burger burger" onClick={handleBurgerClick}>
         <span className="burger__line"></span>
         <span className="burger__line"></span>
         <span className="burger__line"></span>
       </div>
-      <div className={`nav__menu menu ${showMenu ? "active" : ""}`}>
+      <div className={`nav__menu menu ${isMenuOpen ? 'open' : ''}`}>
         <ul className="menu__list">
           <li className="menu__item">
-            <button className="menu__link">
-              Главное
-            </button>
+            <button className="menu__link">Главное</button>
           </li>
           <li className="menu__item">
-            <button className="menu__link">
-              Мой плейлист
-            </button>
+            <button className="menu__link">Мой плейлист</button>
           </li>
           <li className="menu__item">
-            <button className="menu__link">
-              Войти
-            </button>
+            <button className="menu__link">Войти</button>
           </li>
         </ul>
       </div>
@@ -42,25 +36,16 @@ function NavMenu() {
   );
 }
 
-function Main() {
-  return (
-    <div className="main">
-      <NavMenu />
-      {/* some other content */}
-    </div>
-  );
-}
-
 function StartScreen() {
-  // eslint-disable-next-line no-unused-vars
-  const logo = 'some logo value';
+  const logo = '../assets/logo.png';
 
   return (
     <div className="start-screen">
-      <img src={Logo} className="logo" alt="logo" />
+      <img src={logo} className="logo" alt="logo" />
       <h1>Some title here</h1>
       <p>Some text here</p>
       <button>Some button here</button>
+      <p>Learn React</p>
     </div>
   );
 }
@@ -68,7 +53,7 @@ function StartScreen() {
 export default function App() {
   return (
     <div className="App">
-      <Main />
+      <NavMenu />
       <StartScreen />
     </div>
   );

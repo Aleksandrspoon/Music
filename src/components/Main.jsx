@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../css/Main.css';
 import SongList from './SongList';
-import Left from '../left';
+import FilterMenu from '../components/left';
 
 function Main() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
+  (() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 5000);
@@ -20,7 +20,7 @@ function Main() {
         </div>
       ) : (
         <>
-          <Left />
+          <FilterMenu />
           <SongList />
         </>
       )}
