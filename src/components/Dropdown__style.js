@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components';
 
-const MainTextMixin = css`
+export const MainTextMixin = styled.div`
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -8,7 +8,7 @@ const MainTextMixin = css`
     color: #ffffff;
 `
 
-const HoverMixin = css`
+export const HoverMixin = styled.div`
     :hover,
     :hover svg {
         fill: transparent;
@@ -113,3 +113,12 @@ export const RadioInput = styled.input`
         }
     }
 `
+export const FilterCount = styled.span`
+  background-color: #8B00FF;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 10px;
+`;

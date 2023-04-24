@@ -7,14 +7,21 @@ import search from '../assets/icon/search.svg'
 import * as S from './main_center_block__style'
 
 function Filter({ tracks }) {
-  const [isDropdownsOpen, setIsDropdownsOpen] = useState(null)
+  const [isDropdownsOpen, setIsDropdownsOpen] = useState(null);
+  const [selectedFiltersCount, setSelectedFiltersCount] = useState(0);
+
   const toggleDropDown = (type) => {
     if (type === isDropdownsOpen) {
-      setIsDropdownsOpen(null)
-      return
+      setIsDropdownsOpen(null);
+      return;
     }
-    setIsDropdownsOpen(type)
-  }
+    setIsDropdownsOpen(type);
+  };
+
+  const updateSelectedFiltersCount = (count) => {
+    setSelectedFiltersCount(count);
+  };
+
   return (
     <S.Filter>
       <S.FilterTitle>Искать по:</S.FilterTitle>
@@ -24,7 +31,7 @@ function Filter({ tracks }) {
         type={'author'}
         isDropdownsOpen={isDropdownsOpen === 'author'}
         toggleDropDown={toggleDropDown}
-        setIsDropdownsOpen={setIsDropdownsOpen}
+        updateSelectedFiltersCount={updateSelectedFiltersCount}
       />
       <FilterItem
         name={'год выпуска'}
@@ -32,6 +39,7 @@ function Filter({ tracks }) {
         type={'year'}
         isDropdownsOpen={isDropdownsOpen === 'year'}
         toggleDropDown={toggleDropDown}
+        updateSelectedFiltersCount={updateSelectedFiltersCount}
       />
       <FilterItem
         name={'жанр'}
@@ -39,9 +47,11 @@ function Filter({ tracks }) {
         type={'genre'}
         isDropdownsOpen={isDropdownsOpen === 'genre'}
         toggleDropDown={toggleDropDown}
+        updateSelectedFiltersCount={updateSelectedFiltersCount}
       />
+      <div>Выбрано фильтров: {selectedFiltersCount}</div>
     </S.Filter>
-  )
+  );
 }
 
 

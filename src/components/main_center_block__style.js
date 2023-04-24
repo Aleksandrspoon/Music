@@ -256,3 +256,10 @@ export const Filter = styled.div`
     align-items: center;
     margin-bottom: 51px;
 `
+
+export const FilterCount = styled.div`
+display: inline-block;
+margin-left: 8px;
+font-size: 12px;
+color: #888;
+`
