@@ -1,31 +1,16 @@
-import { useState } from 'react';
-import '../css/Main.css';
-import SongList from './SongList';
-import FilterMenu from '../components/left';
+import MainCenterBlock from './MainCenterBlock'
+import Menu from './Menu'
+
+
+import * as Styled from './mainelement__style'
 
 function Main() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  (() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-  }, []);
-
   return (
-    <div className="Main">
-      {isLoading ? (
-        <div className="skeleton">
-          {/* здесь можно добавить скелетон для страницы */}
-        </div>
-      ) : (
-        <>
-          <FilterMenu />
-          <SongList />
-        </>
-      )}
-    </div>
-  );
+    <Styled.Main>
+      <Menu />
+      <MainCenterBlock />
+    </Styled.Main>
+  )
 }
 
-export default Main;
+export default Main

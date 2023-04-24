@@ -4,19 +4,6 @@
     margin-top: 20px;
   }
   
-  .skeleton {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .skeleton-item {
-    width: 100%;
-    height: 150px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-  }
-  
   @media (max-width: 768px) {
     .Main {
       flex-direction: column;
