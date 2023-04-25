@@ -162,13 +162,14 @@ export const FilterButton = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid #ffffff;
+  border: 1px solid ${(props) => (props.selected ? '#007aff' : '#ffffff')}; // изменение цвета рамки в зависимости от пропса selected
   border-radius: 60px;
   padding: 6px 20px;
   &:not(:last-child) {
     margin-right: 10px;
   }
-`
+`;
+
 
 export const ModalItem = styled.div`
   max-width: 150px;
@@ -207,6 +208,7 @@ export const FilterItemsWrapperAuthor = styled.div`
   border-radius: 12px;
 `;
 
+
 export const FilterItemsWrapperGenre = styled(FilterItemsWrapperAuthor)`
   display: ${(props) => (props.isActive === 'genre' ? 'block' : 'none')};
 `;
@@ -244,10 +246,24 @@ export const FilterItems = styled.div`
 `;
 
 export const FilterWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 51px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+border: 1px solid #ffffff;
+border-radius: 60px;
+padding: 6px 20px;
+background-color: ${(props) => (props.isSelected ? '#0000ff' : '#808000')};
+color: ${(props) => (props.isSelected ? '#0000ff' : '#808000')};
+&:hover {
+  border-color: #0000ff;
+  background-color: #808000;
+  color: #ffffff;
+}
+&:not(:last-child) {
+  margin-right: 10px;
+}
+    
 `;
 
 export const Filter = styled.div`

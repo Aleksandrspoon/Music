@@ -1,5 +1,3 @@
-
-
 import * as Styled from './skeleton-style'
 
 const SkeletonImage = () => {

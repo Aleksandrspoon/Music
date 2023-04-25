@@ -56,8 +56,8 @@ export const PlayerBtnRepeat = styled(PlayerBtn)`
 `
 
 export const PlayerBtnRepeatSvg = styled.svg`
-  width: 18px;
-  height: 12px;
+  width: 20px;
+  height: 18px;
   fill: transparent;
   stroke: #696969;
 `
@@ -73,6 +73,7 @@ export const PlayerBtnShuffle = styled(PlayerBtn)`
 
 export const PlayerBtnShuffleSvg = styled.svg`
   width: 19px;
-  height: 12px;
+  height: 19px;
   fill: transparent;
-  stroke: #696969;`
+  stroke: #696969;
+  `

@@ -6,6 +6,7 @@ import search from '../assets/icon/search.svg'
 
 import * as S from './main_center_block__style'
 
+
 function Filter({ tracks }) {
   const [isDropdownsOpen, setIsDropdownsOpen] = useState(null);
   const [selectedFiltersCount, setSelectedFiltersCount] = useState(0);

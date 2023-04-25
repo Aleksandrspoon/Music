@@ -1,4 +1,4 @@
-import MainCenterBlock from './MainCenterBlock'
+import MainCenterBlock from './MainCenterBlock  '
 import Menu from './Menu'
 
 
