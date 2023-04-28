@@ -27,7 +27,7 @@ function FilterItem({ isDropdownsOpen, type, toggleDropDown, tracks, name }) {
   }
   return (
     <S.FilterItem>
-      <S.FilterButton onClick={() => toggle()}>{name}</S.FilterButton>
+      <S.FilterButton isActive={isDropdownsOpen} onClick={() => toggle()}>{name}</S.FilterButton>
       {selectedFilter ? <Counter count={selectedFilter} /> : null}
       {isDropdownsOpen ? (
         <Dropdown
