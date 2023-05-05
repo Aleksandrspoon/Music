@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import * as S from './Dropdown__style';
+import * as S from '../Dropdown/Dropdown__style';
 
 function Dropdown({ type, filterList, riseSelectedFilterCount }) {
   const [filterCount, setFilterCount] = useState(0);

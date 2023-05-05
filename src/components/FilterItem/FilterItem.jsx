@@ -1,7 +1,7 @@
-import Dropdown from './Dropdown'
+import Dropdown from '../Dropdown/Dropdown'
 import  { useState } from 'react'
-import Counter from './Counter'
-import * as S from './FilterItem__style'
+import Counter from '../Counter/Counter'
+import * as S from '../FilterItem/FilterItem__style'
 
 const filterListByYear = ['Новые', ' Старые']
 

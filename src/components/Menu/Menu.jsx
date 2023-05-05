@@ -1,4 +1,4 @@
-import * as Styled from './Menu_style'
+import * as Styled from '../Menu/Menu_style'
 
 import { useState } from 'react'
 import logo from '../assets/logo.png'

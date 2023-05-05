@@ -1,10 +1,10 @@
 import  { useState, useEffect } from 'react'
-import CenterBlock from './CenterBlock'
-import FilterItem from './FilterItem'
+import CenterBlock from '../CenterBlock/CenterBlock'
+import FilterItem from '../FilterItem/FilterItem'
 
 import search from '../assets/icon/search.svg'
 
-import * as S from './main_center_block__style'
+import * as S from '../Main/main_center_block__style'
 
 
 function Filter({ tracks }) {

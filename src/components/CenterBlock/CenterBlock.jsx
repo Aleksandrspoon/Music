@@ -1,4 +1,4 @@
-import * as S from './center_block__style'
+import * as S from '../CenterBlock/center_block__style'
 import watch from '../assets/icon/watch.svg'
 
 function CenterBlock() {

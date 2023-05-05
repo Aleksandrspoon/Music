@@ -1,4 +1,4 @@
-import * as S from './Counter__style'
+import * as S from '../Counter/Counter__style'
 
 function Counter({ count }) {
     return <S.Counter>{count}</S.Counter>

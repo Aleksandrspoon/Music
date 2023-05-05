@@ -1,4 +1,4 @@
-import * as S from './player_controls__style'
+import * as S from '../PlayerControls/player_controls__style'
 
 import iconPrev from '../assets/icon/prev.svg'
 import iconPlay from '../assets/icon/play.svg'
