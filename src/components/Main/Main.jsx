@@ -1,16 +1,18 @@
 import MainCenterBlock from '../Main/MainCenterBlock'
 import Menu from '../Menu/Menu'
+import SideBar from '../sidebar/SideBar'
 
 
 import * as Styled from '../Main/mainelement__style'
 
-function Main() {
+function MainElement() {
   return (
     <Styled.Main>
       <Menu />
       <MainCenterBlock />
+      <SideBar/>
     </Styled.Main>
   )
 }
 
-export default Main
+export default MainElement

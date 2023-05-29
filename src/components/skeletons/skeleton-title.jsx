@@ -1,6 +1,6 @@
 
 
-import * as Styled from './skeleton-style'
+import * as Styled from '../skeletons/skeleton-style'
 
 const SkeletonTitle = () => {
 	return <Styled.Skeleton></Styled.Skeleton>;

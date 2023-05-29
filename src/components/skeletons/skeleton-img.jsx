@@ -1,4 +1,4 @@
-import * as Styled from './skeleton-style'
+import * as Styled from '../skeletons/skeleton-style'
 
 const SkeletonImage = () => {
 	return <Styled.SkeletonImage></Styled.SkeletonImage>;

@@ -56,61 +56,6 @@ export const FilterTitle = styled.div`
   margin-right: 15px;
 `
 
-export const CenterBlockContent = styled.div`
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-`
-export const SearchSVGWrapper = styled.div`
-  width: 17px;
-  height: 17px;
-  margin-right: 5px;
-  stroke: #ffffff;
-  fill: transparent;
-`
-
-export const SearchInput = styled.input`
-  ${'' /* outline: none; */}
-  -webkit-box-flex: 100;
-  -ms-flex-positive: 100;
-  flex-grow: 100;
-  background-color: transparent;
-  border: none;
-  padding: 13px 10px 14px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  &::placeholder {
-    background-color: transparent;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  &::-webkit-input-placeholder {
-    background-color: transparent;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  &::-ms-input-placeholder {
-    background-color: transparent;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-`
 
 export const ModalWindow = styled.div`
   width: 248px;
@@ -162,14 +107,13 @@ export const FilterButton = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid ${(props) => (props.selected ? '#007aff' : '#ffffff')}; // изменение цвета рамки в зависимости от пропса selected
+  border: 1px solid #ffffff;
   border-radius: 60px;
   padding: 6px 20px;
   &:not(:last-child) {
     margin-right: 10px;
   }
-`;
-
+`
 
 export const ModalItem = styled.div`
   max-width: 150px;
@@ -196,8 +140,8 @@ export const FilterButtonWrapper = styled.div`
     }
 `;
 
-export const FilterItemsWrapperAuthor = styled.div`
-  display: ${(props) => (props.isActive === 'author' ? 'block' : 'none')};
+export const FilterItemsWrapperAuthor = styled.div `
+display: ${(props) => (props.isActive === 'author' ? 'block' : 'none')};
   position: absolute;
   z-index: 20;
   top: 50px;
@@ -207,7 +151,6 @@ export const FilterItemsWrapperAuthor = styled.div`
   background: #313131;
   border-radius: 12px;
 `;
-
 
 export const FilterItemsWrapperGenre = styled(FilterItemsWrapperAuthor)`
   display: ${(props) => (props.isActive === 'genre' ? 'block' : 'none')};
@@ -246,24 +189,10 @@ export const FilterItems = styled.div`
 `;
 
 export const FilterWrapper = styled.div`
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-border: 1px solid #ffffff;
-border-radius: 60px;
-padding: 6px 20px;
-background-color: ${(props) => (props.isSelected ? '#0000ff' : '#808000')};
-color: ${(props) => (props.isSelected ? '#0000ff' : '#808000')};
-&:hover {
-  border-color: #0000ff;
-  background-color: #808000;
-  color: #ffffff;
-}
-&:not(:last-child) {
-  margin-right: 10px;
-}
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 51px;
 `;
 
 export const Filter = styled.div`
@@ -271,11 +200,4 @@ export const Filter = styled.div`
     flex-direction: row;
     align-items: center;
     margin-bottom: 51px;
-`
-
-export const FilterCount = styled.div`
-display: inline-block;
-margin-left: 8px;
-font-size: 12px;
-color: #888;
 `

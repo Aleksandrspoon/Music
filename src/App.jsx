@@ -1,8 +1,8 @@
 import '../src/css/App.css'
-import MainCenterBlock from './components/Main/MainCenterBlock'
+import MainCenterBlock from '../src/components/CenterBlock/CenterBlock/CenterBlock'
 import Menu from './components/Menu/Menu'
 import PlayerControls from './components/PlayerControls/PlayerControls'
-import SideBarBlock from './components/SideBarBlock/SideBarBlock'
+import SideBarBlock from '../src/components/sidebar/SideBarBlock'
 import TrackPlayContain from './components/Track/TrackPlayContain'
 
 function MainElement() {

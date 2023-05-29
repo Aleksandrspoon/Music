@@ -1,7 +1,7 @@
 import * as Styled from '../Menu/Menu_style'
 
 import { useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../../components/assets/logo.png'
 
 const MenuElem = ({ href, text }) => {
   return (
